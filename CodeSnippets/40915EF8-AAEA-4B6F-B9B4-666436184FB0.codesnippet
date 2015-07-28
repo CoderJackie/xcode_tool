@@ -3,23 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jackie_register_nib</string>
+	<string>@</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#define ReuseIdentifier @""
-    UINib * nib = [UINib nibWithNibName:@"" bundle:nil];
-    [_tableView registerNib:nib forCellReuseIdentifier:ReuseIdentifier];</string>
+	<string>@"&lt;#string#&gt;"</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>524E7A76-9BBC-4442-86F2-37DB97C7AC37</string>
+	<string>40915EF8-AAEA-4B6F-B9B4-666436184FB0</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>register nib</string>
+	<string>String</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>register nib</string>
+	<string>String</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,25 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>jackie_hide_keyboard</string>
+	<string>jackie_post请求网络(新)</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    [super touchesBegan:touches withEvent:event];
-    [self.view endEditing:YES];
-}
-</string>
+	<string>+ (void)&lt;#api_path#&gt;WithUserId:(NSString *)userId
+                          hud:(NetworkHUD)hud
+                       target:(id)target
+                      success:(void (^)(StatusModel *data))success
+{
+    CreateParamsDic;
+    DicObjectSet([NSString isNull:userId] ? @"0" : userId , @"userId");
+    
+    [self postDataResponsePath:&lt;#api_path#&gt; params:ParamsDic networkHUD:hud target:target success:success];
+
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>A807145A-F6BD-412C-AA06-DC931E43F730</string>
+	<string>DA94C6FF-00F3-4E84-8645-E57FF6E4A005</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>hide keyboard when touch background</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>hide keyboard</string>
+	<string>jackie_post请求网络(新)</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

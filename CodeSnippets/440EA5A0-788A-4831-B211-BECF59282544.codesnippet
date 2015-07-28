@@ -3,16 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>tableView (plain)</string>
+	<string>tableView (group)</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>- (BaseTableView *)tableView
 {
     if (!_tableView) {
-        _tableView = [[BaseTableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _tableView = [[BaseTableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
         _tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
         [DataHelper setExtraCellLineHidden:_tableView];
         _tableView.delegate = self;
@@ -26,15 +26,16 @@
     }
     return _tableView;
     
-}</string>
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>B564B787-4757-4E8E-A8A2-1299CE7B5420</string>
+	<string>440EA5A0-788A-4831-B211-BECF59282544</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>tableView_getter(plain)</string>
+	<string>tableView_getter(group)</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>tableView_getter(plain)</string>
+	<string>tableView_getter(group)</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
